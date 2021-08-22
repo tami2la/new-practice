@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content=""> <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-  
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <title>eMercado - Todo lo que busques está aquí</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
@@ -61,9 +61,8 @@
   </body>
 </html>
 <body class="text-center">
+ <div class="container"> 
   <img src="img/login.png" width="1000" height="300">
-  
-  <div class="container"> 
   <form class="signin" id="formulario" action="home.html" onsubmit="return login()">
     <h1>Inicio de sesion</h1>
     <label for="inputUser" class="important">Ingrese su usuario</label>
@@ -78,7 +77,6 @@
     </div>
   <button type="submit" id="log">Iniciar sesion</button> 
   </form>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
   </div>
 
   <script src="js/init.js"></script>
