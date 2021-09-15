@@ -46,13 +46,18 @@
   font-size: 38px;
 }
 
-#form-login { 
-  width: 300px;
-  height: 180px;
-  background-color:coral;
+#formulario { 
+  width: 600px;
+  height: 300px;
+  background-color:#3e86f385;
 
 }
 
+#title {
+  font-weight: bold;
+  color: white
+  
+}
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -145,5 +150,33 @@ a.custom-card:hover {
 }
 
 .checked {
+  color: orange;
+}
+
+#nameUsuario {
+  font-weight: bold;
+  color: white
+  
+}
+
+#rangeFilterCostMin {
+  width: 2.5cm;
+
+}
+
+#rangeFilterCostMax {
+  width: 2.5cm;
+}
+
+.clasificacion{
+  direction: rtl;/* right to left */
+  unicode-bidi: bidi-override;/* bidireccional */
+}
+
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
   color: orange;
 }
