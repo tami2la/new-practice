@@ -18,7 +18,7 @@
 <body>
   <nav class="site-header sticky-top py-1 bg-dark">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="home.html">Inicio</a>
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
@@ -31,54 +31,61 @@
           </form>
     </div>
   </nav>
+  <!--Creamos un contenedor para guardar toda la informacion del producto seleccionado-->
   <div class="container p-5">
     <h3 id="product-name"></h3>
     <hr class="my-3">
-    <dl>
-      <dt>Descripción</dt>
-      <dd>
-        <p id="product-description"></p>
-      </dd>
-      <dt>Cantidad en stock</dt>
-      <dd>
-        <p id="product-count"></p>
-      </dd>
-      <dt>Imágenes ilustrativas</dt>
-      <dd>
-        <div class="row text-center text-lg-left pt-2" id="product-images">
-        </div>
-      </dd>
-    </dl>
-    <dt>Productos relacionados</dt>
-    <div id="related-Products"></div>
+    <!--Creamos una lista descriptiva -->
+      <dl>
+        <dt>Imágenes ilustrativas</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="product-images">
+          </div>
+        </dd>
+        <dt>Descripción</dt>
+        <dd>
+          <p id="product-description"></p>
+        </dd>
+        <dt>Cantidad en stock</dt>
+        <dd>
+          <p id="product-count"></p>
+        </dd>
+       
+      </dl>
+   <!-- 
+     <dt>Productos relacionados</dt>
+      <div id="related-Products"></div>
+    -->
+
+    <!--Creamos la seccion de comentarios con un form para agregar uno nuevo con su respectiva valoracion-->
     <dt>Comentarios</dt>
-    <div id="comments-section"></div>
-    <dt></dt>
-    <div id="comments">
-      <div class="list-group-item list-group-item-action">
-        <div class="col-md-12 mb-3">
-          <textarea class="form-control" id="comment" rows="3" placeholder="Deja tu comentario"></textarea>
-          <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-              --><label for="radio2">★</label><!--
-              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-              --><label for="radio3">★</label><!--
-              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-              --><label for="radio4">★</label><!--
-              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-              --><label for="radio5">★</label>
-            </p>
-          </form>
-          <button class="btn btn-light btn-block" id="enviar" >Enviar</button>
+    <div id="comments-section" class="puntaje-usuario"></div>
+      <div id="comments">
+        <div class="list-group-item list-group-item-action">
+          <div class="col-md-12 mb-3">
+            <form>
+              <textarea class="form-control" id="comment" rows="3" placeholder="Deja tu comentario"></textarea>
+                <div >
+                  <p>Puntuación(de derecha a izquierda):</p>
+                    <input id="estrella1" type="radio" name="estrellas" value="5">
+                    <label class="fa fa-star" id="1star" for="estrella1" ></label>
+                    <input id="estrella2" type="radio" name="estrellas" value="4">
+                    <label class="fa fa-star" id="2star"for="estrella2"></label>
+                    <input id="estrella3" type="radio" name="estrellas" value="3">
+                    <label class="fa fa-star" id="3star" for="estrella3" ></label>
+                    <input id="estrella4" type="radio" name="estrellas" value="2">
+                    <label class="fa fa-star" id="4star" for="estrella4"></label>
+                    <input id="estrella5" type="radio" name="estrellas" value="1">
+                    <label class="fa fa-star" id="5star" for="estrella5" ></label>  
+                </div>
+              <button class="btn btn-light btn-block" type="button" id="enviar">Enviar</button>
+            </form>
+         
         </div>
       </div>     
     </div>
   </div>
 
-  </div>
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
@@ -100,6 +107,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/product-info.js"></script>
+  <script src="js/validation.js"></script>
 </body>
 
 </html>

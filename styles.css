@@ -149,9 +149,7 @@ a.custom-card:hover {
   text-decoration: inherit;
 }
 
-.checked {
-  color: orange;
-}
+
 
 #nameUsuario {
   font-weight: bold;
@@ -168,15 +166,21 @@ a.custom-card:hover {
   width: 2.5cm;
 }
 
-.clasificacion{
-  direction: rtl;/* right to left */
-  unicode-bidi: bidi-override;/* bidireccional */
-}
 
 label:hover ~ label {
   color: orange;
 }
 
+label:hover {
+  color:orange
+}
 input[type="radio"]:checked ~ label {
   color: orange;
 }
+
+input[type = "radio"]{
+  display:none;
+  }
+
+
+
